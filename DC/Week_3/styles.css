@@ -1,7 +1,11 @@
-
 table {
   font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
   font-size: medium;
   font-style: normal;
 }
+
+.a {list-style-type: lower-roman;}
+.b {list-style-type: lower-alpha;}
+.c {list-style-type: square;}
+.d {list-style-type: "$";}
