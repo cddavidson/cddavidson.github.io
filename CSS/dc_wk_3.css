@@ -1,0 +1,23 @@
+table {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-size: medium;
+  font-style: normal;
+}
+
+.a {list-style-type: lower-roman;}
+.b {list-style-type: lower-alpha;}
+.c {list-style-type: square;}
+.d {list-style-type: "$";}
+
+a.nav {text-decoration: none;}
+a#not-nav {text-decoration: none;}
+a#baseball {text-decoration: none;}
+a#not-nav:link {color:greenyellow;}
+a#not-nav:visited {color:darkgreen;}
+a#not-nav:hover {color:fuchsia;}
+
+ol.a li::first-letter {font-size: large; font-weight: bold;}
+ol.b li::first-letter {font-size: large; font-weight: bold;}
+ul.c li::first-letter {font-size: large; font-weight: bold;}
+ul.d li::first-letter {font-size: large; font-weight: bold;}
