@@ -14,5 +14,5 @@ body {background-color: $uchicago-light-gray;
     .header {background-color: $uchicago-light-gray;
     color: $uchicago-maroon;}
 
-    .footer {background-color: $uchicago-dark-gray;
+    .footer {position: absolute; bottom: 0; width:100%; background-color: $uchicago-dark-gray;
     color: $uchicago-light-gray;}
