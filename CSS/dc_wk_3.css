@@ -1,3 +1,10 @@
+h2 {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-size: xx-large;
+  font-style: normal;
+}
+
 table {
   font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
