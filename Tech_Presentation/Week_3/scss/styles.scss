@@ -3,9 +3,11 @@
 $uchicago-maroon: #800000;
 $uchicago-light-gray: #D6D6CE;
 $uchicago-dark-gray: #767676;
+$black: #000000;
 $font-stack: "EB Garamond", serif;
+$std-margin-left: 15px;
 
-body {background-color: $uchicago-light-gray;
+body {margin: $std-margin-left; background-color: $uchicago-light-gray;
     color: $uchicago-maroon; font-family: $font-stack;}
 
     .container-fluid {background-color: $uchicago-maroon;
@@ -15,4 +17,4 @@ body {background-color: $uchicago-light-gray;
     color: $uchicago-maroon;}
 
     .footer {position: absolute; bottom: 0; width:100%; background-color: $uchicago-dark-gray;
-    color: $uchicago-light-gray;}
+    color: $black;}
