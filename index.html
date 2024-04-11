@@ -13,7 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" 
     integrity="sha256-3gQJhtmj7YnV1fmtbVcnAV6eI4ws0Tr48bVZCThtCGQ=" crossorigin="anonymous"></script>
     <!--The navbar at the top of the home page is directly below this comment-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">Chris Davidson's Page</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,10 +37,32 @@
       </nav>
     <!--This is the end of the entire navbar code block after the closing tag above-->
     <div class="body">
-      <h1>Week 3 Technical Assignment</h1>
-      <p>The Official Maroon and Garamond font of UChicago</p>
-      <p>Made with Sass</p>
+      <h1>Week 4 Digital Chalkboard</h1>
+      <p>Bootstrap Basics and JavaScript Buttons</p>
     </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">Vestibulum luctus mattis dapibus. Suspendisse interdum enim quis tortor placerat placerat. 
+                        Sed et elit ante. Duis finibus vehicula nulla, quis faucibus orci rhoncus suscipit.</div>
+        <div class="col-sm">Aenean nibh quam, vestibulum pharetra molestie at, vestibulum nec ligula. 
+                        Nullam rhoncus ex a nibh rutrum, ut tincidunt nibh egestas.</div>
+        <div class="col-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent condimentum mi arcu,
+                        ac ultricies neque mattis vel. Curabitur accumsan, purus.</div>
+        <div class="col-sm">Maecenas rhoncus nulla egestas, porta orci a, consequat arcu. 
+                        Ut ut vestibulum dui. Aliquam eget lorem augue. Praesent faucibus quis.</div>
+      </div>
+    </div>
+    <div class="container mt-4 mb-4">
+      <div class="row">
+        <div class="col text-center">
+          <button id="button_1" class="btn btn-primary">Greeting</button>
+        </div>
+        <div class="col text-center">
+          <button id="button_2" class="btn btn-secondary">Submit</button>
+        </div>
+      </div>
+    </div>
+    <script src="JavaScript/main.js"></script>
     <div class ="footer">
       <footer>
         <p>DIGS 30005: Data Publication for the Humanities</p>

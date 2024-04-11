@@ -4,11 +4,12 @@ body {
   background-color: #D6D6CE;
   color: #800000;
   font-family: "EB Garamond", serif;
+  padding-bottom: 200px;
 }
 
-.container-fluid {
+nav {
   background-color: #800000;
-  color: #767676;
+  color: #D6D6CE;
 }
 
 .header {
@@ -17,9 +18,15 @@ body {
 }
 
 .footer {
-  position: absolute;
+  position: sticky;
   bottom: 0;
   width: 100%;
   background-color: #767676;
   color: #000000;
+}
+
+.col-sm {
+  background-color: #767676;
+  padding: 20px;
+  margin: 15px;
 }/*# sourceMappingURL=styles.css.map */

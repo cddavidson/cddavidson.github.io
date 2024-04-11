@@ -8,13 +8,15 @@ $font-stack: "EB Garamond", serif;
 $std-margin-left: 15px;
 
 body {margin: $std-margin-left; background-color: $uchicago-light-gray;
-    color: $uchicago-maroon; font-family: $font-stack;}
+    color: $uchicago-maroon; font-family: $font-stack; padding-bottom: 200px;}
 
-    .container-fluid {background-color: $uchicago-maroon;
-    color: $uchicago-dark-gray;}
+    nav {background-color: $uchicago-maroon;
+    color: $uchicago-light-gray;}
 
     .header {background-color: $uchicago-light-gray;
     color: $uchicago-maroon;}
 
-    .footer {position: absolute; bottom: 0; width:100%; background-color: $uchicago-dark-gray;
+    .footer {position: sticky; bottom: 0; width:100%; background-color: $uchicago-dark-gray;
     color: $black;}
+
+    .col-sm {background-color: $uchicago-dark-gray; padding: 20px; margin: 15px;}
