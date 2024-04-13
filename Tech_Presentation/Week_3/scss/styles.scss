@@ -4,6 +4,7 @@ $uchicago-maroon: #800000;
 $uchicago-light-gray: #D6D6CE;
 $uchicago-dark-gray: #767676;
 $black: #000000;
+$white: #FFFFFF;
 $font-stack: "EB Garamond", serif;
 $std-margin-left: 15px;
 
@@ -11,7 +12,7 @@ body {margin: $std-margin-left; background-color: $uchicago-light-gray;
     color: $uchicago-maroon; font-family: $font-stack; padding-bottom: 200px;}
 
     nav {background-color: $uchicago-maroon;
-    color: $uchicago-light-gray;}
+    color: $white;}
 
     .header {background-color: $uchicago-light-gray;
     color: $uchicago-maroon;}
