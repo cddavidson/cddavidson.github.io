@@ -16,6 +16,15 @@ nav {
   background-color: #800000;
 }
 
+#DC_dropdown {
+  background-color: #800000;
+}
+
+.dropdown-menu {
+  background-color: #800000;
+  color: #FFFFFF;
+}
+
 .header {
   background-color: #D6D6CE;
   color: #800000;
