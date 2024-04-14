@@ -25,6 +25,18 @@ nav {
   color: #FFFFFF;
 }
 
+.dropdown-item {
+  color: #FFFFFF;
+}
+
+.navbar-brand {
+  color: #FFFFFF;
+}
+
+.nav-link {
+  color: #FFFFFF;
+}
+
 .header {
   background-color: #D6D6CE;
   color: #800000;
@@ -34,6 +46,7 @@ nav {
   position: sticky;
   bottom: 0;
   width: 100%;
+  margin-top: 50px;
   background-color: #767676;
   color: #000000;
 }

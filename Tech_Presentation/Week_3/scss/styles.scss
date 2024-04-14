@@ -20,10 +20,16 @@ body {margin: $std-margin-left; background-color: $uchicago-light-gray;
 
     .dropdown-menu {background-color: $uchicago-maroon; color: $white;}
 
+    .dropdown-item {color: $white;}
+
+    .navbar-brand {color: $white;}
+
+    .nav-link {color: $white;}
+
     .header {background-color: $uchicago-light-gray;
     color: $uchicago-maroon;}
 
-    .footer {position: sticky; bottom: 0; width:100%; background-color: $uchicago-dark-gray;
+    .footer {position: sticky; bottom: 0; width:100%; margin-top: 50px; background-color: $uchicago-dark-gray;
     color: $black;}
 
     .col-sm {background-color: $uchicago-dark-gray; padding: 20px; margin: 15px;}
