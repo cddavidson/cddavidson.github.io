@@ -42,6 +42,21 @@ nav {
   color: #800000;
 }
 
+#button_1 {
+  background-color: #767676;
+  color: #FFFFFF;
+}
+
+.accordion-item {
+  background-color: #800000;
+  color: #FFFFFF;
+}
+
+.accordion-button {
+  background-color: #800000;
+  color: #FFFFFF;
+}
+
 .footer {
   position: sticky;
   bottom: 0;
