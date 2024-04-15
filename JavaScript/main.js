@@ -19,7 +19,7 @@ function changeButton() {
     console.log("Before Change:", button.textContent, button.className);
 
     button.textContent = "Done";
-    button.className = "btn btn-sucess";
+    button.className = "btn btn-success";
 
     console.log("After Change:", button.textContent, button.className);
 }
