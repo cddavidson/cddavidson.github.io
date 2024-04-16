@@ -11,6 +11,10 @@ $std-margin-left: 15px;
 body {margin: $std-margin-left; background-color: $uchicago-light-gray;
     color: $uchicago-maroon; font-family: $font-stack; padding-bottom: 200px;}
 
+    h1 {text-align: center;}
+
+    h2 {text-align: center;}
+
     nav {background-color: $uchicago-maroon;
     color: $white;}
 
@@ -28,9 +32,7 @@ body {margin: $std-margin-left; background-color: $uchicago-light-gray;
 
     .header {background-color: $uchicago-light-gray;
     color: $uchicago-maroon;}
-
-    #e-mail {background-color: $uchicago-maroon; color: $white;}
-
+    
     .accordion-item {background-color: $uchicago-maroon; color: $white;}
 
     .accordion-button {background-color: $uchicago-maroon; color: $white;}

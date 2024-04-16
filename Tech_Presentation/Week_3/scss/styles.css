@@ -7,6 +7,14 @@ body {
   padding-bottom: 200px;
 }
 
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
 nav {
   background-color: #800000;
   color: #FFFFFF;
@@ -40,11 +48,6 @@ nav {
 .header {
   background-color: #D6D6CE;
   color: #800000;
-}
-
-#e-mail {
-  background-color: #800000;
-  color: #FFFFFF;
 }
 
 .accordion-item {
