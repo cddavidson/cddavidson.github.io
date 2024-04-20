@@ -60,6 +60,14 @@ nav {
   color: #FFFFFF;
 }
 
+input::-moz-placeholder {
+  color: #800000;
+}
+
+input::placeholder {
+  color: #800000;
+}
+
 .footer {
   position: sticky;
   bottom: 0;

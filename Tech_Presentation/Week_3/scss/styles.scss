@@ -37,6 +37,8 @@ body {margin: $std-margin-left; background-color: $uchicago-light-gray;
 
     .accordion-button {background-color: $uchicago-maroon; color: $white;}
 
+    input::placeholder {color: $uchicago-maroon;}
+
     .footer {position: sticky; bottom: 0; width:100%; margin-top: 50px; background-color: $uchicago-dark-gray;
     color: $black;}
 
