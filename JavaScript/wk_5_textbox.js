@@ -1,15 +1,14 @@
 function checkIndyTrivia() {
     const answer = document.getElementById("Indy_Answer").value.trim();
     const responseElement = document.getElementById("Indy_Response");
-    //const answerArray = ["UChicago" , "University of Chicago" , "U of C" , "The University of Chicago" , "Univ. of Chicago" , "Chicago"];
-    //const correctAnswer = answerArray.find(answer);
-    const correctAnswer = "Paris";
+    const answerArray = ["uchicago" , "university of chicago" , "u of c" , "the university of chicago" , "univ. of chicago" , "chicago"];
+    const correctAnswer = answerArray.includes(answer.toLowerCase());
 
-    if (answer.toLowerCase() === correctAnswer.toLowerCase())
+    if (correctAnswer === true)
         {responseElement.textContent = `Correct! You guessed ${answer}.`;}
 
     else
-        {responseElement.textContent = `Incorrect. You guessed ${answer}.`;}
+        {responseElement.textContent = `Incorrect. You guessed ${answer}. Hint: Think, deep dish pizza.`;}
 }
 
 document.addEventListener("DOMContentLoaded", () => {
