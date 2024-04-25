@@ -8,27 +8,31 @@ function lastItem(fruits, outputID) {
     toggleVisibility(outputID);
 }
 
-var responses = {};
+const responses = {};
 
 function sortInput() {
     let categories = parseInt(prompt("How many categories of things would you like to enter? Please choose between 2 and 4."));
     while (isNaN(categories) || categories < 2 || categories > 4)
-        {categories = parseInt(prompt("Invalid Input: Please choose a number between 2 and 4."))}
+        {categories = parseInt(prompt("Invalid Input: Please choose a number between 2 and 4 inclusive."))}
 
     for (let i=0; i < categories; i++)
         {let x = (prompt(`Please enter category ${i+1} of ${categories}.`));
         let y =(prompt(`Please enter a type of ${x}.`));
         responses[x] = y}
 
-    console.log(responses);}
+    const responseValues = Object.values(responses);
+    const responseValuesSorted = Object.values(responses).toSorted();
+    
+    for (const value of responseValues) {
+        let newDiv = document.createElement("div");
+        newDiv.innerHTML = `<p><strong>You entered: ${value}</strong></p>`
+        document.getElementById("displayArea").appendChild(newDiv)}
 
-        //sortedObjects = responses.toSorted();
+    for (const value of responseValuesSorted) {
+        let newDiv = document.createElement("div");
+        newDiv.innerHTML = `<p><strong>I sorted them: ${value}</strong></p>`
+        document.getElementById("displayArea").appendChild(newDiv)}
 
-        let displayArea = document.getElementById('displayArea');
-        for (const [key, value] of Object.entries(responses)) {
-            displayArea.innterHTML = `<p><strong>You entered: ${key}</strong></p>`;
-            displayArea.innterHTML = `<p><strong>I sorted: ${value}</strong></p>`}
-
-
+};
 
 document.getElementById('sortButton').addEventListener('click', sortInput);
