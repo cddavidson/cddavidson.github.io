@@ -2,9 +2,9 @@ function lastItem(fruits, outputID) {
     const sortedFruits = fruits.toSorted();
     const lastFruit = sortedFruits[sortedFruits.length -1];
     const fruitOutput = document.getElementById(outputID);
-    if (!fruitOutput.innterHTML)
-        {fruitOutput.innerHTML = `<strong>Sorted Fruits:</strong> ${sortedFruits.join(', ')}
-        <br><strong>Last Fruit in Alphabetical Order: </strong> ${lastFruit}`;}
+    if (!fruitOutput.innerHTML)
+        {fruitOutput.innerHTML = `The original array is <strong>[${fruits}]</strong>, and I sorted it alphabetically.
+        <br>The last item of the sorted array is <strong>${lastFruit}.</strong>`;}
     toggleVisibility(outputID);
 }
 
