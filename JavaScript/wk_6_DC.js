@@ -25,21 +25,20 @@ function sortInput() {
     document.getElementById("userEntriesTitle").appendChild(newDiv);
 
     let newDiv_2 = document.createElement("div");
-    newDiv_2.innerHTML = `<p><strong>I sorted:</strong></p>`;
+    newDiv_2.innerHTML = `<p><strong>I sorted them as in the following order:</strong></p>`;
     document.getElementById("sortedEntriesTitle").appendChild(newDiv_2);
 
     const responseKeys = Object.keys(responses);
-    //const responseValuesSorted = Object.entries(responses).toSorted();
-    const responseValuesSorted = Object.entries(responses).toSorted();
+    const responseValuesSorted = Object.values(responses).toSorted();
     
     for (const key of responseKeys) {
         let newDiv = document.createElement("div");
         newDiv.innerHTML = `<p><strong>Your ${key} is called ${responses[key]}.</strong></p>`
         document.getElementById("userEntries").appendChild(newDiv)}
 
-    for (const [key, value] of responseValuesSorted) {
+    for (const value of responseValuesSorted) {
         let newDiv = document.createElement("div");
-        newDiv.innerHTML = `<p><strong>Your ${key} is called ${value}</strong></p>`
+        newDiv.innerHTML = `<p><strong>${value}</strong></p>`
         document.getElementById("sortedEntries").appendChild(newDiv)}
 
 };
