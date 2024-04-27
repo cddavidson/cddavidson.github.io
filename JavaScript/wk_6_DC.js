@@ -11,7 +11,7 @@ function lastItem(fruits, outputID) {
 const responses = {};
 
 function sortInput() {
-    let categories = parseInt(prompt("How many categories of things would you like to enter? Please choose between 2 and 4."));
+    let categories = parseInt(prompt("How many categories of things would you like to enter? Please choose between 2 and 4 inclusive."));
     while (isNaN(categories) || categories < 2 || categories > 4)
         {categories = parseInt(prompt("Invalid Input: Please choose a number between 2 and 4 inclusive."))}
 
@@ -20,18 +20,27 @@ function sortInput() {
         let y =(prompt(`Please enter a type of ${x}.`));
         responses[x] = y}
 
-    const responseValues = Object.values(responses);
-    const responseValuesSorted = Object.values(responses).toSorted();
-    
-    for (const value of responseValues) {
-        let newDiv = document.createElement("div");
-        newDiv.innerHTML = `<p><strong>You entered: ${value}</strong></p>`
-        document.getElementById("displayArea").appendChild(newDiv)}
+    let newDiv = document.createElement("div");
+    newDiv.innerHTML = `<p><strong>You entered:</strong></p>`;
+    document.getElementById("userEntriesTitle").appendChild(newDiv);
 
-    for (const value of responseValuesSorted) {
+    let newDiv_2 = document.createElement("div");
+    newDiv_2.innerHTML = `<p><strong>I sorted:</strong></p>`;
+    document.getElementById("sortedEntriesTitle").appendChild(newDiv_2);
+
+    const responseKeys = Object.keys(responses);
+    //const responseValuesSorted = Object.entries(responses).toSorted();
+    const responseValuesSorted = Object.entries(responses).toSorted();
+    
+    for (const key of responseKeys) {
         let newDiv = document.createElement("div");
-        newDiv.innerHTML = `<p><strong>I sorted them: ${value}</strong></p>`
-        document.getElementById("displayArea").appendChild(newDiv)}
+        newDiv.innerHTML = `<p><strong>Your ${key} is called ${responses[key]}.</strong></p>`
+        document.getElementById("userEntries").appendChild(newDiv)}
+
+    for (const [key, value] of responseValuesSorted) {
+        let newDiv = document.createElement("div");
+        newDiv.innerHTML = `<p><strong>Your ${key} is called ${value}</strong></p>`
+        document.getElementById("sortedEntries").appendChild(newDiv)}
 
 };
 
