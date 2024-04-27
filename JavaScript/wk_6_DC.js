@@ -25,7 +25,7 @@ function sortInput() {
     document.getElementById("userEntriesTitle").appendChild(newDiv);
 
     let newDiv_2 = document.createElement("div");
-    newDiv_2.innerHTML = `<p><strong>I sorted them as in the following order:</strong></p>`;
+    newDiv_2.innerHTML = `<p><strong>I sorted them in the following order:</strong></p>`;
     document.getElementById("sortedEntriesTitle").appendChild(newDiv_2);
 
     const responseKeys = Object.keys(responses);
