@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
         display: true,
         title: {
           display: true,
-          text: 'Months (2023)',
+          text: 'Month',
           color: 'rgb(128, 0, 0)',
           font: {
             family: 'EB Garamond',
