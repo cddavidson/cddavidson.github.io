@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
             display: true,
             title: {
               display: true,
-              text: 'Xbox Gamerscore',
+              text: 'Gamerscore',
               color: 'rgb(128, 0, 0)',
               font: {
                 family: 'EB Garamond',
