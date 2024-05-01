@@ -7,7 +7,7 @@ $white: #FFFFFF;
 $font-stack: "EB Garamond", serif;
 $std-margin-left: 15px;
 
-body {text-align: center; width: 100%; margin: $std-margin-left; background-color: $uchicago-light-gray;
+body {text-align: center; margin: $std-margin-left; background-color: $uchicago-light-gray;
     color: $uchicago-maroon; font-family: $font-stack; padding-bottom: 200px;}
 
     nav {background-color: $uchicago-maroon;
@@ -25,16 +25,7 @@ body {text-align: center; width: 100%; margin: $std-margin-left; background-colo
 
     .nav-link {color: $white;}
 
-    .header {background-color: $uchicago-light-gray;
-    color: $uchicago-maroon;}
-    
-    .accordion-item {background-color: $uchicago-maroon; color: $white;}
-
-    .accordion-button {background-color: $uchicago-maroon; color: $white;}
-
-    input::placeholder {color: $uchicago-maroon;}
+    #ochre-container {background-color: $uchicago-light-gray;}
 
     .footer {position: sticky; bottom: 0; width:100%; margin-top: 50px; background-color: $uchicago-dark-gray;
     color: $white;}
-
-    .col-sm {background-color: $uchicago-dark-gray; padding: 20px; margin: 15px;}
