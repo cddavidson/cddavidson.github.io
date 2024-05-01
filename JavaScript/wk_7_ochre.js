@@ -36,12 +36,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         var property = document.createElement('td');
         property.setAttribute('id', 'property_' + i);
-        property.textContent = properties[i].children[0].children[0].children[0].innerHTML;
+        property.innerHTML = properties[i].children[0].children[0].children[0].innerHTML;
         document.getElementById('row_' + i).appendChild(property);
 
         var value = document.createElement('td');
         value.setAttribute('id', 'property_value_' + i);
-        value.textContent = properties[i].children[1].innerHTML;
+        value.innerHTML = properties[i].children[1].innerHTML;
         document.getElementById('row_' + i).appendChild(value);
       }
     }
