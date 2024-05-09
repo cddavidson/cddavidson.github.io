@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
 body {
   text-align: center;
-  width: 100%;
   background-color: #D6D6CE;
   color: #800000;
   font-family: "EB Garamond", serif;
@@ -17,16 +16,16 @@ nav {
   color: #FFFFFF;
 }
 
-.dropdown-menu {
-  background-color: #800000;
+#Tech_dropdown {
+  color: #FFFFFF;
 }
 
 #DC_dropdown {
   color: #FFFFFF;
 }
 
-#Tech_dropdown {
-  color: #FFFFFF;
+.dropdown-menu {
+  background-color: #800000;
 }
 
 .dropdown-item {
@@ -41,21 +40,6 @@ nav {
   color: #FFFFFF;
 }
 
-.header {
-  background-color: #D6D6CE;
-  color: #800000;
-}
-
-.accordion-item {
-  background-color: #800000;
-  color: #FFFFFF;
-}
-
-.accordion-button {
-  background-color: #800000;
-  color: #FFFFFF;
-}
-
 input::-moz-placeholder {
   color: #800000;
 }
@@ -64,16 +48,17 @@ input::placeholder {
   color: #800000;
 }
 
+a {
+  color: #800000;
+}
+a:hover {
+  color: #1a0000;
+}
+
 .footer {
   position: sticky;
   bottom: 0;
   margin-top: 50px;
   background-color: #767676;
   color: #FFFFFF;
-}
-
-.col-sm {
-  background-color: #767676;
-  padding: 20px;
-  margin: 15px;
-}/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=wk_8_music.css.map */

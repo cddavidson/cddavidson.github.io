@@ -9,14 +9,15 @@ $font-stack: "EB Garamond", serif;
 body {text-align: center; width: 100%; background-color: $uchicago-light-gray;
     color: $uchicago-maroon; font-family: $font-stack; padding-bottom: 200px;}
 
-    nav {background-color: $uchicago-maroon;
-    color: $white;}
+    nav {background-color: $uchicago-maroon;}
 
-    #Tech_dropdown {background-color: $uchicago-maroon;}
-
-    #DC_dropdown {background-color: $uchicago-maroon;}
+    .dropdown {background-color: $uchicago-maroon; color: $white;}
 
     .dropdown-menu {background-color: $uchicago-maroon;}
+
+    #DC_dropdown {color: $white;}
+
+    #Tech_dropdown {color: $white;}
 
     .dropdown-item {color: $white;}
 
