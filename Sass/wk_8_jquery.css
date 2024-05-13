@@ -32,8 +32,15 @@ nav {
 }
 
 .active {
-  color: #FFFFFF;
   font-weight: bold;
+}
+
+.dropdown-item.active {
+  background-color: #800000;
+}
+
+#DC_dropdown.dropdown-item.active {
+  background-color: #800000;
 }
 
 .footer {

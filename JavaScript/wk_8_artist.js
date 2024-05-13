@@ -29,7 +29,8 @@ function displayResults(artists) {
 
     artists.forEach(artist => {
         const link = document.createElement("a");
-        link.innerHTML = `<br>${artist.name}</br>`;
+        var artistName = artist.name
+        link.innerHTML = `<br>${artistName}</br>`;
         link.href = `javascript:fetchAlbums('${artist.id}')`;
         document.getElementById("results").appendChild(link);
     });
@@ -51,19 +52,18 @@ function fetchAlbums(artistID) {
 
 }
 
-function albumResults(albums) {
+function albumResults(albums, artistName) {
     const albumResultsDiv = document.getElementById("albumResults");
     albumResultsDiv.innerHTML = "";
-
-    //const Bandname = document.getElementById("tableTitle");
-        //Bandname.innerHTML = `<br>${artist.name}</br>`;
-        //document.getElementById("tableTitle").appendChild(Bandname);
 
     if (albums.length === 0) {
         albumResultsDiv.textContent = 'No albums found for this artist';
         return;
     }
 
+    //const Title = document.getElementById("tableTitle");
+        //Title.innerHTML = `<br>${artistName}</br>`;
+        //document.getElementById("tableTitle").appendChild(Title);
     const table = document.createElement("table");
     const hr = document.createElement("tr");
     const h1 = document.createElement('th');
