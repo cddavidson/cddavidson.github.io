@@ -11,11 +11,6 @@ nav {
   background-color: #800000;
 }
 
-.dropdown {
-  background-color: #800000;
-  color: #FFFFFF;
-}
-
 #Tech_dropdown {
   color: #FFFFFF;
 }
@@ -32,12 +27,13 @@ nav {
   color: #FFFFFF;
 }
 
-.navbar-brand {
+.nav-link {
   color: #FFFFFF;
 }
 
-.nav-link {
+.active {
   color: #FFFFFF;
+  font-weight: bold;
 }
 
 .footer {
