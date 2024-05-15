@@ -31,12 +31,12 @@ function displayResults(artists) {
         const link = document.createElement("a");
         var artistName = artist.name
         link.innerHTML = `<br>${artistName}</br>`;
-        link.href = `javascript:fetchAlbums('${artist.id}')`;
+        link.href = `javascript:fetchAlbums('${artist.id}', '${artistName}')`;
         document.getElementById("results").appendChild(link);
     });
 }
 
-function fetchAlbums(artistID) {
+function fetchAlbums(artistID, artistName) {
     const baseURL = "https://musicbrainz.org/ws/2/release/?artist=";
     const format = "&fmt=json";
     const albumsURL = baseURL + artistID + format;
@@ -44,7 +44,7 @@ function fetchAlbums(artistID) {
     fetch(albumsURL)
         .then(response => response.json())
         .then(data => {
-            albumResults(data.releases);
+            albumResults(data.releases, artistName);
         })
         .catch(error => {
             console.error("Error retrieving albums:", error);
@@ -61,9 +61,8 @@ function albumResults(albums, artistName) {
         return;
     }
 
-    //const Title = document.getElementById("tableTitle");
-        //Title.innerHTML = `<br>${artistName}</br>`;
-        //document.getElementById("tableTitle").appendChild(Title);
+    const Title = document.getElementById("tableTitle");
+        Title.innerHTML = artistName;
     const table = document.createElement("table");
     const hr = document.createElement("tr");
     const h1 = document.createElement('th');

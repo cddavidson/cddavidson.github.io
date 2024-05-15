@@ -35,7 +35,7 @@ nav {
   font-weight: bold;
 }
 
-.dropdown-item.active {
+.dropdown-item.active, .dropdown-item:active {
   background-color: #800000;
 }
 
