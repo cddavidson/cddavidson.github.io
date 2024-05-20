@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
           display: true,
           title: {
             display: true,
-            text: 'Temperature (in Fahrenheit)',
+            text: 'Degrees (in Fahrenheit)',
             color: 'rgb(128, 0, 0)',
             font: {
               family: 'EB Garamond',

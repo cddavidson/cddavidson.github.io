@@ -28,3 +28,6 @@ ol.a li::first-letter {font-size: large; font-weight: bold;}
 ol.b li::first-letter {font-size: large; font-weight: bold;}
 ul.c li::first-letter {font-size: large; font-weight: bold;}
 ul.d li::first-letter {font-size: large; font-weight: bold;}
+
+ul {text-align: left;}
+ol {text-align: left;}
