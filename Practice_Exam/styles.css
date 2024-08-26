@@ -1,0 +1,21 @@
+body {text-align: center;
+    font-family: "Garamond", serif;
+    font-optical-sizing: auto;
+    font-size: medium;
+    font-style: normal;
+    background-color: #D6D6CE;
+    color: #800000;
+    }
+
+table {
+    font-family: "Garamond", serif;
+    font-optical-sizing: auto;
+    font-size: medium;
+    font-style: normal;
+  }
+
+ul {text-align: left;}
+
+#license_info {font-weight: bolder;}
+
+#title {font-weight: bolder;}

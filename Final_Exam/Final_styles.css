@@ -1,0 +1,31 @@
+body {text-align: center;
+    font-family: "Garamond", serif;
+    font-optical-sizing: auto;
+    font-size: medium;
+    font-style: normal;
+    background-color: #D6D6CE;
+    color: #800000;
+    }
+
+table {
+    font-family: "Garamond", serif;
+    font-optical-sizing: auto;
+    font-size: medium;
+    font-style: normal;
+  }
+
+nav {background-color: #800000}
+
+#nav {color: white; font-weight: bolder;}
+
+.footer {position: absolute; background-color: #767676; color: white;}
+
+h3 {font-weight: bolder;}
+
+p {font-weight: bolder;}
+
+.col-sm {
+  background-color: #767676;
+  padding: 20px;
+  margin: 15px;
+  font-weight: bolder;}

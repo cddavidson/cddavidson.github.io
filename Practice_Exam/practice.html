@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    integrity="sha256-PI8n5gCcz9cQqQXm3PEtDuPG8qx9oFsFctPg0S5zb8g=" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h3>Practice</h3>
+    <div class="container mt-3">
+        <h1 id="title"></h1>
+        <!--This is for a textbox input that calls a function for the API
+        <form id="wikiForm" onsubmit="wikiAPI(); event.preventDefault()">
+            <div class="row">
+              <div class="col">
+                <input id="searchTerm" name="searchTerm" type="text" class="form-control" placeholder="Enter your search term here...">
+              </div>
+            </div>
+        </form>-->
+            <table class="table table-striped" id="ochreHead">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Synopsis</th>
+                        <th>Length</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+            </table>
+            <ul id="tablets">
+            </ul>
+            <h6 id="license_info"></h6>
+            <a id="creative_commons"></a>
+    </div>
+    <script src="practice.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" 
+    integrity="sha256-3gQJhtmj7YnV1fmtbVcnAV6eI4ws0Tr48bVZCThtCGQ=" crossorigin="anonymous"></script>
+</body>
+</html>
